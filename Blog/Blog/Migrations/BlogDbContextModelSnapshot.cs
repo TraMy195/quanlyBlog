@@ -41,6 +41,38 @@ namespace Blog.Migrations
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            Description = "Tin công nghệ",
+                            Name = "Công nghệ"
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            Description = "Tin giải trí",
+                            Name = "Giải trí"
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            Description = "Tin thể thao",
+                            Name = "Thể thao"
+                        },
+                        new
+                        {
+                            CategoryId = 4,
+                            Description = "Tin giáo dục",
+                            Name = "Giáo dục"
+                        },
+                        new
+                        {
+                            CategoryId = 5,
+                            Description = "Tin kinh tế",
+                            Name = "Kinh tế"
+                        });
                 });
 
             modelBuilder.Entity("Blog.Models.Comment", b =>
@@ -73,6 +105,48 @@ namespace Blog.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Comments");
+
+                    b.HasData(
+                        new
+                        {
+                            CommentId = 1,
+                            Content = "Bài hay",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2491),
+                            PostId = 1,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            CommentId = 2,
+                            Content = "Rất hữu ích",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2492),
+                            PostId = 1,
+                            UserId = 5
+                        },
+                        new
+                        {
+                            CommentId = 3,
+                            Content = "Hay quá",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2493),
+                            PostId = 2,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            CommentId = 4,
+                            Content = "Cảm ơn tác giả",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2494),
+                            PostId = 3,
+                            UserId = 5
+                        },
+                        new
+                        {
+                            CommentId = 5,
+                            Content = "Đọc rất thích",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2495),
+                            PostId = 4,
+                            UserId = 4
+                        });
                 });
 
             modelBuilder.Entity("Blog.Models.Post", b =>
@@ -121,6 +195,63 @@ namespace Blog.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Posts");
+
+                    b.HasData(
+                        new
+                        {
+                            PostId = 1,
+                            AuthorId = 2,
+                            CategoryId = 1,
+                            Content = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2381),
+                            Status = "Công khai",
+                            Title = "Bài viết công nghệ",
+                            Views = 10
+                        },
+                        new
+                        {
+                            PostId = 2,
+                            AuthorId = 2,
+                            CategoryId = 2,
+                            Content = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2407),
+                            Status = "Công khai",
+                            Title = "Bài viết giải trí",
+                            Views = 5
+                        },
+                        new
+                        {
+                            PostId = 3,
+                            AuthorId = 3,
+                            CategoryId = 3,
+                            Content = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2409),
+                            Status = "Công khai",
+                            Title = "Bài viết thể thao",
+                            Views = 20
+                        },
+                        new
+                        {
+                            PostId = 4,
+                            AuthorId = 3,
+                            CategoryId = 4,
+                            Content = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2411),
+                            Status = "Công khai",
+                            Title = "Bài viết giáo dục",
+                            Views = 7
+                        },
+                        new
+                        {
+                            PostId = 5,
+                            AuthorId = 2,
+                            CategoryId = 5,
+                            Content = "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2412),
+                            Status = "Công khai",
+                            Title = "Bài viết kinh tế",
+                            Views = 15
+                        });
                 });
 
             modelBuilder.Entity("Blog.Models.User", b =>
@@ -162,6 +293,53 @@ namespace Blog.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "admin@gmail.com",
+                            FullName = "Admin",
+                            Password = "123",
+                            Role = "Admin",
+                            Username = "admin"
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            Email = "editor1@gmail.com",
+                            FullName = "Editor One",
+                            Password = "123",
+                            Role = "Editor",
+                            Username = "editor1"
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            Email = "editor2@gmail.com",
+                            FullName = "Editor Two",
+                            Password = "123",
+                            Role = "Editor",
+                            Username = "editor2"
+                        },
+                        new
+                        {
+                            UserId = 4,
+                            Email = "reader1@gmail.com",
+                            FullName = "Reader One",
+                            Password = "123",
+                            Role = "Reader",
+                            Username = "reader1"
+                        },
+                        new
+                        {
+                            UserId = 5,
+                            Email = "reader2@gmail.com",
+                            FullName = "Reader Two",
+                            Password = "123",
+                            Role = "Reader",
+                            Username = "reader2"
+                        });
                 });
 
             modelBuilder.Entity("Blog.Models.Comment", b =>

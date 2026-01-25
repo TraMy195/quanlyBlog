@@ -20,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Editor\Views\NewFolder1\" />
+    <Folder Include="Areas\Editor\Views\NewFolder\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

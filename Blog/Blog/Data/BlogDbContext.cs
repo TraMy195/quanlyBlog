@@ -74,8 +74,43 @@ namespace Blog.Data
                       .HasForeignKey(c => c.UserId)
                       .OnDelete(DeleteBehavior.Restrict); // Đổi sang Restrict để tránh lỗi Multiple Cascade Paths
             });
+            // ===== SEED USERS =====
+            modelBuilder.Entity<User>().HasData(
+                new User { UserId = 1, Username = "admin", Password = "123", FullName = "Admin", Email = "admin@gmail.com", Role = "Admin" },
+                new User { UserId = 2, Username = "editor1", Password = "123", FullName = "Editor One", Email = "editor1@gmail.com", Role = "Editor" },
+                new User { UserId = 3, Username = "editor2", Password = "123", FullName = "Editor Two", Email = "editor2@gmail.com", Role = "Editor" },
+                new User { UserId = 4, Username = "reader1", Password = "123", FullName = "Reader One", Email = "reader1@gmail.com", Role = "Reader" },
+                new User { UserId = 5, Username = "reader2", Password = "123", FullName = "Reader Two", Email = "reader2@gmail.com", Role = "Reader" }
+            );
 
-            
+            // ===== SEED CATEGORIES =====
+            modelBuilder.Entity<Category>().HasData(
+                new Category { CategoryId = 1, Name = "Công nghệ", Description = "Tin công nghệ" },
+                new Category { CategoryId = 2, Name = "Giải trí", Description = "Tin giải trí" },
+                new Category { CategoryId = 3, Name = "Thể thao", Description = "Tin thể thao" },
+                new Category { CategoryId = 4, Name = "Giáo dục", Description = "Tin giáo dục" },
+                new Category { CategoryId = 5, Name = "Kinh tế", Description = "Tin kinh tế" }
+            );
+
+            // ===== SEED POSTS =====
+            modelBuilder.Entity<Post>().HasData(
+                new Post { PostId = 1, Title = "Bài viết công nghệ", Content = new string('A', 60), AuthorId = 2, CategoryId = 1, Views = 10, Status = "Công khai" },
+                new Post { PostId = 2, Title = "Bài viết giải trí", Content = new string('B', 60), AuthorId = 2, CategoryId = 2, Views = 5, Status = "Công khai" },
+                new Post { PostId = 3, Title = "Bài viết thể thao", Content = new string('C', 60), AuthorId = 3, CategoryId = 3, Views = 20, Status = "Công khai" },
+                new Post { PostId = 4, Title = "Bài viết giáo dục", Content = new string('D', 60), AuthorId = 3, CategoryId = 4, Views = 7, Status = "Công khai" },
+                new Post { PostId = 5, Title = "Bài viết kinh tế", Content = new string('E', 60), AuthorId = 2, CategoryId = 5, Views = 15, Status = "Công khai" }
+            );
+
+            // ===== SEED COMMENTS =====
+            modelBuilder.Entity<Comment>().HasData(
+                new Comment { CommentId = 1, Content = "Bài hay", PostId = 1, UserId = 4 },
+                new Comment { CommentId = 2, Content = "Rất hữu ích", PostId = 1, UserId = 5 },
+                new Comment { CommentId = 3, Content = "Hay quá", PostId = 2, UserId = 4 },
+                new Comment { CommentId = 4, Content = "Cảm ơn tác giả", PostId = 3, UserId = 5 },
+                new Comment { CommentId = 5, Content = "Đọc rất thích", PostId = 4, UserId = 4 }
+            );
+
+
         }
     }
 }

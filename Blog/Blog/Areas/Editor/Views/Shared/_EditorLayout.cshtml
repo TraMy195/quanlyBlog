@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Editor - Blog</title>
+</head>
+<body>
+    <header>
+        <h3>EDITOR PANEL</h3>
+        <a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a> |
+        <a asp-area="Editor" asp-controller="Post" asp-action="Index">Bài viết</a> |
+        <a asp-controller="Account" asp-action="Logout">Đăng xuất</a>
+        <hr />
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

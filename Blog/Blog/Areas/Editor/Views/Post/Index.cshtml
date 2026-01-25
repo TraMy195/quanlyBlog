@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Blog.Models.Post>
+
+<h2>Bài viết của tôi</h2>
+
+<a asp-action="Create">➕ Viết bài mới</a>
+
+<table border="1">
+    <tr>
+        <th>Tiêu đề</th>
+        <th>Chuyên mục</th>
+        <th>Ngày</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Category?.Name</td>
+            <td>@item.CreatedAt.ToShortDateString()</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PostId">✏️</a> |
+                <a asp-action="Delete" asp-route-id="@item.PostId"
+                   onclick="return confirm('Xóa bài này?')">🗑</a>
+            </td>
+        </tr>
+    }
+</table>

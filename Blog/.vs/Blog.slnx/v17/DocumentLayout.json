@@ -1,0 +1,493 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Voiu\\quanlyBlog\\Blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\shared\\_guestlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\shared\\_guestlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\areas\\editor\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\data\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\data\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\voiu\\quanlyblog\\blog\\blog\\migrations\\20260122162837_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\migrations\\20260122162837_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:05:34.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:12:15.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\appsettings.json",
+              "RelativeDocumentMoniker": "Blog\\appsettings.json",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\appsettings.json",
+              "RelativeToolTip": "Blog\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-22T15:37:47.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_GuestLayout.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T16:33:29.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Blog\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T16:33:52.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:44:54.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:44:32.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:43:15.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T16:20:26.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:43:16.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "Blog\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "Blog\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:11:09.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Blog\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Blog\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:11:20.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_EditorLayout.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:57:01.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:42:58.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Program.cs",
+              "RelativeDocumentMoniker": "Blog\\Program.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Program.cs",
+              "RelativeToolTip": "Blog\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwDEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:51:02.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20260122162837_SeedData.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Migrations\\20260122162837_SeedData.cs",
+              "RelativeDocumentMoniker": "Blog\\Migrations\\20260122162837_SeedData.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Migrations\\20260122162837_SeedData.cs",
+              "RelativeToolTip": "Blog\\Migrations\\20260122162837_SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:28:37.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Controllers\\PostController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:39:58.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\Post.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
+              "RelativeToolTip": "Blog\\Models\\Post.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:48:08.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T18:11:46.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BlogDbContext.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
+              "RelativeDocumentMoniker": "Blog\\Data\\BlogDbContext.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
+              "RelativeToolTip": "Blog\\Data\\BlogDbContext.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:25:25.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T16:21:26.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-22T16:20:56.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Blog\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Blog\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:19:54.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Blog\\Models\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:19:08.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Blog\\Models\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:57:34.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\Comment.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
+              "RelativeToolTip": "Blog\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:48:19.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Blog\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:48:14.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\User.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
+              "RelativeToolTip": "Blog\\Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:48:03.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\Category.cs",
+              "ToolTip": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
+              "RelativeToolTip": "Blog\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:48:01.974Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
