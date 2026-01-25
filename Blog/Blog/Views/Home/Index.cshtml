@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Blog.Models.Post>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Trang chủ</h2>
+
+@foreach (var item in Model)
+{
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:15px">
+
+        @* ✅ HIỂN THỊ ẢNH *@
+        @if (!string.IsNullOrEmpty(item.ImagePath))
+        {
+            <img src="~/images/@item.ImagePath"
+                 style="max-width:250px; display:block; margin-bottom:10px" />
+        }
+
+    <h3>@item.Title</h3>
+
+    <p>
+        @(item.Content.Length > 100
+                ? item.Content.Substring(0, 100) + "..."
+                : item.Content)
+    </p>
+
+        <a asp-action="Details" asp-route-id="@item.PostId">
+            Đọc tiếp
+        </a>
+    </div>
+}

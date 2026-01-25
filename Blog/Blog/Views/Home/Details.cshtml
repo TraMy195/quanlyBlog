@@ -1,0 +1,66 @@
+﻿@model Blog.Models.Post
+
+<h2>@Model.Title</h2>
+
+<p>
+    <b>Chuyên mục:</b> @Model.Category?.Name |
+    <b>Tác giả:</b> @Model.Author?.Username |
+    <b>Ngày đăng:</b> @Model.CreatedAt.ToString("dd/MM/yyyy") |
+    <b>Lượt xem:</b> @Model.Views
+</p>
+
+<hr />
+
+<div>
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <img src="~/images/@Model.ImagePath"
+             style="max-width:400px; margin-bottom:15px" />
+    }
+    <p>@Model.Content</p>
+
+
+</div>
+<hr />
+<h3>Bình luận</h3>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form asp-controller="Comment" asp-action="Create" method="post">
+        <input type="hidden" name="postId" value="@Model.PostId" />
+
+        <textarea name="content" rows="4" style="width:100%"
+              placeholder="Nhập bình luận..."></textarea>
+
+        <br />
+        <button type="submit">Gửi bình luận</button>
+    </form>
+}
+else
+{
+    <p>
+        🔒 <a asp-controller="Account" asp-action="Login">
+            Đăng nhập
+        </a> để bình luận
+    </p>
+}
+
+<hr />
+
+@if (Model.Comments != null && Model.Comments.Any())
+{
+    foreach (var c in Model.Comments.OrderByDescending(x => x.CreatedAt))
+    {
+        <div style="border-bottom:1px solid #ddd; margin-bottom:10px">
+            <b>@c.User?.Username</b>
+            <span style="color:gray; font-size:12px">
+                (@c.CreatedAt.ToString("dd/MM/yyyy HH:mm"))
+            </span>
+            <p>@c.Content</p>
+        </div>
+    }
+}
+else
+{
+    <p>Chưa có bình luận nào.</p>
+}

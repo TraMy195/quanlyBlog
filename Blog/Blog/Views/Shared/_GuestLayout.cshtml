@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Blog</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header style="padding:10px; border-bottom:1px solid #ccc">
+        <a asp-controller="Home" asp-action="Index">🏠 Trang chủ</a>
+
+        <span style="float:right">
+            @if (User?.Identity != null && User.Identity.IsAuthenticated)
+            {
+                <span>Xin chào <b>@User.Identity?.Name</b></span>
+                <text> | </text>
+                <a asp-controller="Account" asp-action="Logout">Đăng xuất</a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login">Đăng nhập</a>
+                <text> | </text>
+                <a asp-controller="Account" asp-action="Register">Đăng ký</a>
+            }
+        </span>
+    </header>
+
+    <main style="padding:20px">
+        @RenderBody()
+    </main>
+
+    <footer style="padding:10px; border-top:1px solid #ccc; text-align:center">
+        © Blog Management
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
