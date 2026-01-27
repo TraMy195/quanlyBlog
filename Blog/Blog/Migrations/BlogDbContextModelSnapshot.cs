@@ -111,7 +111,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 1,
                             Content = "Bài hay",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2491),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7947),
                             PostId = 1,
                             UserId = 4
                         },
@@ -119,7 +119,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 2,
                             Content = "Rất hữu ích",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2492),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7949),
                             PostId = 1,
                             UserId = 5
                         },
@@ -127,7 +127,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 3,
                             Content = "Hay quá",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2493),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7950),
                             PostId = 2,
                             UserId = 4
                         },
@@ -135,7 +135,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 4,
                             Content = "Cảm ơn tác giả",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2494),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7951),
                             PostId = 3,
                             UserId = 5
                         },
@@ -143,7 +143,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 5,
                             Content = "Đọc rất thích",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2495),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7980),
                             PostId = 4,
                             UserId = 4
                         });
@@ -203,7 +203,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 1,
                             Content = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2381),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7900),
                             Status = "Công khai",
                             Title = "Bài viết công nghệ",
                             Views = 10
@@ -214,7 +214,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 2,
                             Content = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2407),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7925),
                             Status = "Công khai",
                             Title = "Bài viết giải trí",
                             Views = 5
@@ -225,7 +225,7 @@ namespace Blog.Migrations
                             AuthorId = 3,
                             CategoryId = 3,
                             Content = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2409),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7927),
                             Status = "Công khai",
                             Title = "Bài viết thể thao",
                             Views = 20
@@ -236,7 +236,7 @@ namespace Blog.Migrations
                             AuthorId = 3,
                             CategoryId = 4,
                             Content = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2411),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7930),
                             Status = "Công khai",
                             Title = "Bài viết giáo dục",
                             Views = 7
@@ -247,7 +247,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 5,
                             Content = "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
-                            CreatedAt = new DateTime(2026, 1, 22, 23, 28, 35, 241, DateTimeKind.Local).AddTicks(2412),
+                            CreatedAt = new DateTime(2026, 1, 27, 16, 59, 33, 805, DateTimeKind.Local).AddTicks(7931),
                             Status = "Công khai",
                             Title = "Bài viết kinh tế",
                             Views = 15
@@ -261,6 +261,9 @@ namespace Blog.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+
+                    b.Property<string>("AvatarPath")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()

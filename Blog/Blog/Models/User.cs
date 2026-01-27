@@ -15,6 +15,8 @@ namespace Blog.Models
         public string Email { get; set; }
         public string Role { get; set; } // Admin, Editor, Reader
 
+        public string? AvatarPath { get; set; }
+
         public ICollection<Post>? Posts { get; set; }
         public ICollection<Comment>? Comments { get; set; }
     }

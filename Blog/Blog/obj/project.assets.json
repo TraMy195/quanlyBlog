@@ -4041,23 +4041,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kvasir\\.nuget\\packages\\": {},
+    "C:\\Users\\TraMy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
+      "projectUniqueName": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
       "projectName": "Blog",
-      "projectPath": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
-      "packagesPath": "C:\\Users\\Kvasir\\.nuget\\packages\\",
-      "outputPath": "D:\\Voiu\\quanlyBlog\\Blog\\Blog\\obj\\",
+      "projectPath": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
+      "packagesPath": "C:\\Users\\TraMy\\.nuget\\packages\\",
+      "outputPath": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kvasir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TraMy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4084,7 +4084,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4122,6 +4122,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4130,7 +4148,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

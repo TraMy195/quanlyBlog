@@ -14,17 +14,38 @@ namespace Blog.Controllers
         }
 
         // ===== TRANG CHỦ =====
-        public IActionResult Index()
+        public IActionResult Index(string? keyword, int? categoryId)
         {
-            var posts = _context.Posts
+            var query = _context.Posts
                 .Include(p => p.Author)
                 .Include(p => p.Category)
-                .Where(p => p.Status == "Công khai")
+                .Where(p => p.Status == "Công khai");
+
+            // 🔍 Tìm kiếm
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                query = query.Where(p =>
+                    p.Title.Contains(keyword) ||
+                    p.Content.Contains(keyword));
+            }
+
+            // 📂 Lọc theo chuyên mục
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId);
+            }
+
+            ViewBag.Keyword = keyword;
+            ViewBag.CategoryId = categoryId;
+            ViewBag.Categories = _context.Categories.ToList();
+
+            var posts = query
                 .OrderByDescending(p => p.CreatedAt)
                 .ToList();
 
             return View(posts);
         }
+
 
         // ===== CHI TIẾT BÀI VIẾT =====
         public IActionResult Details(int id)
@@ -45,5 +66,12 @@ namespace Blog.Controllers
 
             return View(post);
         }
+
+
+
+
+
+
+
     }
 }

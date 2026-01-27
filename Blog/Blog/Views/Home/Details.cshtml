@@ -49,18 +49,101 @@ else
 
 @if (Model.Comments != null && Model.Comments.Any())
 {
-    foreach (var c in Model.Comments.OrderByDescending(x => x.CreatedAt))
+    @foreach (var c in Model.Comments.OrderByDescending(x => x.CreatedAt))
     {
+        <img src="~/avatars/@(c.User?.AvatarPath ?? "default.png")"
+             style="width:40px;height:40px;border-radius:50%;object-fit:cover" />
+
+        <b>@c.User?.Username</b>
+
         <div style="border-bottom:1px solid #ddd; margin-bottom:10px">
             <b>@c.User?.Username</b>
             <span style="color:gray; font-size:12px">
                 (@c.CreatedAt.ToString("dd/MM/yyyy HH:mm"))
             </span>
-            <p>@c.Content</p>
+
+            <p id="content-@c.CommentId">@c.Content</p>
+
+            @if (User.Identity.IsAuthenticated &&
+                User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value == c.UserId.ToString())
+            {
+                <button class="btn btn-sm btn-warning"
+                        onclick="openEditModal(@c.CommentId)">
+                    ✏️ Sửa
+                </button>
+
+                <form asp-controller="Comment"
+                      asp-action="Delete"
+                      method="post"
+                      style="display:inline">
+                    <input type="hidden" name="commentId" value="@c.CommentId" />
+                    <button type="submit"
+                            class="btn btn-sm btn-danger"
+                            onclick="return confirm('Xóa bình luận này?')">
+                        🗑️ Xóa
+                    </button>
+                </form>
+            }
         </div>
     }
+
 }
 else
 {
     <p>Chưa có bình luận nào.</p>
 }
+<div class="modal fade" id="editCommentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-controller="Comment" asp-action="Edit" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">✏️ Sửa bình luận</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" name="commentId" id="editCommentId" />
+                    <textarea name="content"
+                              id="editCommentContent"
+                              class="form-control"
+                              rows="4"></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Hủy
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function openEditModal(commentId) {
+            // Lấy nội dung comment hiện tại
+            const content = document.getElementById('content-' + commentId).innerText;
+
+            // Gán vào modal
+            document.getElementById('editCommentId').value = commentId;
+            document.getElementById('editCommentContent').value = content;
+
+            // Mở modal Bootstrap
+            var modal = new bootstrap.Modal(
+                document.getElementById('editCommentModal')
+            );
+            modal.show();
+        }
+    </script>
+}
+
+<b>Tác giả:</b>
+<a asp-controller="Editor"
+   asp-action="Profile"
+   asp-route-id="@Model.AuthorId">
+    @Model.Author?.Username
+</a>

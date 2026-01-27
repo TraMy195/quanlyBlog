@@ -1,0 +1,53 @@
+﻿@model Blog.Models.User
+@{
+    ViewData["Title"] = "Trang cá nhân Editor";
+}
+
+<h2>👤 @Model.FullName</h2>
+
+<p>
+    <b>Username:</b> @Model.Username <br />
+    <b>Email:</b> @Model.Email
+</p>
+
+<hr />
+
+<h4>📝 Bài viết của Editor</h4>
+
+@if (Model.Posts != null && Model.Posts.Any())
+{
+    <div class="row">
+        @foreach (var post in Model.Posts
+            .Where(p => p.Status == "Công khai")
+            .OrderByDescending(p => p.CreatedAt))
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    @if (!string.IsNullOrEmpty(post.ImagePath))
+                    {
+                        <img src="~/images/@post.ImagePath"
+                             class="card-img-top"
+                             style="height:180px; object-fit:cover" />
+                    }
+                    <div class="card-body">
+                        <h6>@post.Title</h6>
+                        <p style="font-size:13px">
+                            📂 @post.Category?.Name <br />
+                            👁 @post.Views lượt xem
+                        </p>
+                        <a asp-controller="Home"
+                           asp-action="Details"
+                           asp-route-id="@post.PostId"
+                           class="btn btn-sm btn-primary">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Editor chưa có bài viết.</p>
+}

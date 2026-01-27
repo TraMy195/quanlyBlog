@@ -40,5 +40,50 @@ namespace Blog.Controllers
 
             return RedirectToAction("Details", "Home", new { id = postId });
         }
+
+
+
+
+
+
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult Edit(int commentId, string content)
+        {
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var comment = _context.Comments
+                .FirstOrDefault(c => c.CommentId == commentId && c.UserId == userId);
+
+            if (comment == null)
+                return Forbid();
+
+            comment.Content = content;
+            _context.SaveChanges();
+
+            return RedirectToAction("Details", "Home", new { id = comment.PostId });
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult Delete(int commentId)
+        {
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var comment = _context.Comments
+                .FirstOrDefault(c => c.CommentId == commentId && c.UserId == userId);
+
+            if (comment == null)
+                return Forbid();
+
+            int postId = comment.PostId;
+
+            _context.Comments.Remove(comment);
+            _context.SaveChanges();
+
+            return RedirectToAction("Details", "Home", new { id = postId });
+        }
+
     }
 }

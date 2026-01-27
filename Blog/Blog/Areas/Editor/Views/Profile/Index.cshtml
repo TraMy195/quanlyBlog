@@ -1,0 +1,125 @@
+﻿@model Blog.Models.User
+@{
+    ViewData["Title"] = "Trang cá nhân";
+}
+
+<h2>👤 Trang cá nhân Editor</h2>
+
+<a asp-area="Editor"
+   asp-controller="Profile"
+   asp-action="Edit"
+   class="btn btn-warning">
+    ✏️ Chỉnh sửa hồ sơ
+</a>
+
+
+
+<div class="card mb-3 text-center">
+    <div class="card-body">
+        <img src="~/avatars/@(Model.AvatarPath ?? "default.jpg")"
+             style="width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover" />
+
+
+        <h5>@Model.FullName</h5>
+        <p><b>Username:</b> @Model.Username</p>
+        <p><b>Email:</b> @Model.Email</p>
+        <p><b>Role:</b> @Model.Role</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5>@Model.FullName</h5>
+                <p><b>Username:</b> @Model.Username</p>
+                <p><b>Email:</b> @Model.Email</p>
+                <p><b>Role:</b> @Model.Role</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h6>📊 Thống kê</h6>
+                <p>Bài viết: <b>@Model.Posts?.Count()</b></p>
+                <p>
+                    Lượt xem:
+                    <b>@Model.Posts?.Sum(p => p.Views)</b>
+                </p>
+                <p>
+                    Bình luận:
+                    <b>@Model.Posts?.Sum(p => p.Comments!.Count)</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <h4>📝 Bài viết của tôi</h4>
+
+        @if (Model.Posts != null && Model.Posts.Any())
+        {
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th>Trạng thái</th>
+                        <th>Lượt xem</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var post in Model.Posts.OrderByDescending(p => p.CreatedAt))
+                    {
+                        <tr>
+                            <td>
+                                @if (!string.IsNullOrEmpty(post.ImagePath))
+                                {
+                                    <img src="~/images/@post.ImagePath"
+                                         style="width:80px" />
+                                }
+                            </td>
+                            <td>@post.Title</td>
+                            <td>@post.Status</td>
+                            <td>@post.Views</td>
+                            <td>
+                                <a asp-area="Editor"
+                                   asp-controller="Post"
+                                   asp-action="Edit"
+                                   asp-route-id="@post.PostId"
+                                   class="btn btn-sm btn-warning">
+                                    ✏️
+                                </a>
+                                <a asp-area="Editor"
+                                   asp-controller="Post"
+                                   asp-action="Delete"
+                                   asp-route-id="@post.PostId"
+                                   class="btn btn-sm btn-danger"
+                                   onclick="return confirm('Xóa bài này?')">
+                                    🗑️
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>Chưa có bài viết nào.</p>
+        }
+    </div>
+</div>
