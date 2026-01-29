@@ -1,0 +1,121 @@
+﻿@model List<Blog.Models.User>
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+    var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+}
+
+<h2>👥 Quản lý người dùng</h2>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+<a asp-area="Admin"
+   asp-controller="User"
+   asp-action="Create"
+   class="btn btn-success mb-3">
+    ➕ Thêm user
+</a>
+
+<table class="table table-bordered table-hover align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Trạng thái</th>
+            <th style="width:260px">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.UserId</td>
+                <td>@u.Username</td>
+                <td>@u.Email</td>
+
+                <!-- ===== ĐỔI QUYỀN ===== -->
+                <td>
+                    @if (currentUserId != u.UserId.ToString())
+                    {
+                        <form asp-area="Admin"
+                              asp-controller="User"
+                              asp-action="ChangeRole"
+                              method="post"
+                              class="d-flex gap-2">
+                            <input type="hidden" name="userId" value="@u.UserId" />
+
+                            <select name="role" class="form-select form-select-sm">
+                                <option value="Reader" selected="@(u.Role == "Reader")">Reader</option>
+                                <option value="Editor" selected="@(u.Role == "Editor")">Editor</option>
+                                <option value="Admin" selected="@(u.Role == "Admin")">Admin</option>
+                            </select>
+
+                            <button class="btn btn-sm btn-primary">
+                                Lưu
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Bạn</span>
+                    }
+                </td>
+
+                <!-- ===== TRẠNG THÁI ===== -->
+                <td>
+                    @if (u.IsBlocked)
+                    {
+                        <span class="badge bg-dark">Vô hiệu vĩnh viễn</span>
+                    }
+                    else if (u.IsLocked)
+                    {
+                        <span class="badge bg-warning text-dark">Bị khóa</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">Hoạt động</span>
+                    }
+                </td>
+
+                <!-- ===== HÀNH ĐỘNG ===== -->
+                <td>
+                    @if (currentUserId != u.UserId.ToString())
+                    {
+                        <!-- 🔒 Khóa / mở -->
+                        <form asp-area="Admin"
+                              asp-controller="User"
+                              asp-action="ToggleLock"
+                              method="post"
+                              class="d-inline">
+                            <input type="hidden" name="userId" value="@u.UserId" />
+                            <button class="btn btn-sm btn-warning">
+                                @(u.IsLocked ? "Mở khóa" : "Khóa")
+                            </button>
+                        </form>
+
+                        <!-- 🗑️ Vô hiệu (Block) -->
+                        <form asp-area="Admin"
+                              asp-controller="User"
+                              asp-action="Block"
+                              method="post"
+                              class="d-inline"
+                              onsubmit="return confirm('Vô hiệu vĩnh viễn user này?')">
+                            <input type="hidden" name="userId" value="@u.UserId" />
+                            <button class="btn btn-sm btn-danger">
+                                🗑️
+                            </button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -19,5 +19,8 @@ namespace Blog.Models
 
         public ICollection<Post>? Posts { get; set; }
         public ICollection<Comment>? Comments { get; set; }
+
+        public bool IsLocked { get; set; } = false;
+        public bool IsBlocked { get; set; } = false;
     }
 }

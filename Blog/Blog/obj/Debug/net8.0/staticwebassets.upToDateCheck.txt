@@ -1,3 +1,4 @@
+wwwroot\avatars\avatar_2.png
 wwwroot\avatars\avatar_2.webp
 wwwroot\avatars\default.jpg
 wwwroot\css\site.css

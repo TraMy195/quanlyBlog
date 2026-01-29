@@ -39,6 +39,12 @@ namespace Blog.Controllers
                 ModelState.AddModelError("", "Sai tài khoản hoặc mật khẩu");
                 return View(model);
             }
+            if (user.IsLocked)
+            {
+                ModelState.AddModelError("", "Tài khoản đã bị khóa");
+                return View();
+            }
+
 
             var claims = new List<Claim>
             {
@@ -56,13 +62,15 @@ namespace Blog.Controllers
 
             // 🔁 Điều hướng theo Role
             if (user.Role == "Admin")
-                return RedirectToAction("Index", "Category", new { area = "Admin" });
+                return RedirectToAction("Index", "User", new { area = "Admin" });
 
             if (user.Role == "Editor")
                 return RedirectToAction("Index", "Post", new { area = "Editor" });
 
             return RedirectToAction("Index", "Home");
         }
+
+
 
         // ================= REGISTER =================
 

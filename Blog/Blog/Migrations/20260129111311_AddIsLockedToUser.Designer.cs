@@ -4,6 +4,7 @@ using Blog.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blog.Migrations
 {
     [DbContext(typeof(BlogDbContext))]
-    partial class BlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260129111311_AddIsLockedToUser")]
+    partial class AddIsLockedToUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,7 +114,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 1,
                             Content = "Bài hay",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3500),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2720),
                             PostId = 1,
                             UserId = 4
                         },
@@ -119,7 +122,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 2,
                             Content = "Rất hữu ích",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3502),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2722),
                             PostId = 1,
                             UserId = 5
                         },
@@ -127,7 +130,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 3,
                             Content = "Hay quá",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3503),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2723),
                             PostId = 2,
                             UserId = 4
                         },
@@ -135,7 +138,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 4,
                             Content = "Cảm ơn tác giả",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3504),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2724),
                             PostId = 3,
                             UserId = 5
                         },
@@ -143,7 +146,7 @@ namespace Blog.Migrations
                         {
                             CommentId = 5,
                             Content = "Đọc rất thích",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3505),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2725),
                             PostId = 4,
                             UserId = 4
                         });
@@ -203,7 +206,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 1,
                             Content = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3460),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2679),
                             Status = "Công khai",
                             Title = "Bài viết công nghệ",
                             Views = 10
@@ -214,7 +217,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 2,
                             Content = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3480),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2700),
                             Status = "Công khai",
                             Title = "Bài viết giải trí",
                             Views = 5
@@ -225,7 +228,7 @@ namespace Blog.Migrations
                             AuthorId = 3,
                             CategoryId = 3,
                             Content = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3482),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2702),
                             Status = "Công khai",
                             Title = "Bài viết thể thao",
                             Views = 20
@@ -236,7 +239,7 @@ namespace Blog.Migrations
                             AuthorId = 3,
                             CategoryId = 4,
                             Content = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3484),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2704),
                             Status = "Công khai",
                             Title = "Bài viết giáo dục",
                             Views = 7
@@ -247,7 +250,7 @@ namespace Blog.Migrations
                             AuthorId = 2,
                             CategoryId = 5,
                             Content = "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
-                            CreatedAt = new DateTime(2026, 1, 29, 19, 33, 9, 63, DateTimeKind.Local).AddTicks(3485),
+                            CreatedAt = new DateTime(2026, 1, 29, 18, 13, 9, 312, DateTimeKind.Local).AddTicks(2705),
                             Status = "Công khai",
                             Title = "Bài viết kinh tế",
                             Views = 15
@@ -273,9 +276,6 @@ namespace Blog.Migrations
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsBlocked")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("IsLocked")
                         .HasColumnType("bit");
@@ -309,7 +309,6 @@ namespace Blog.Migrations
                             UserId = 1,
                             Email = "admin@gmail.com",
                             FullName = "Admin",
-                            IsBlocked = false,
                             IsLocked = false,
                             Password = "123",
                             Role = "Admin",
@@ -320,7 +319,6 @@ namespace Blog.Migrations
                             UserId = 2,
                             Email = "editor1@gmail.com",
                             FullName = "Editor One",
-                            IsBlocked = false,
                             IsLocked = false,
                             Password = "123",
                             Role = "Editor",
@@ -331,7 +329,6 @@ namespace Blog.Migrations
                             UserId = 3,
                             Email = "editor2@gmail.com",
                             FullName = "Editor Two",
-                            IsBlocked = false,
                             IsLocked = false,
                             Password = "123",
                             Role = "Editor",
@@ -342,7 +339,6 @@ namespace Blog.Migrations
                             UserId = 4,
                             Email = "reader1@gmail.com",
                             FullName = "Reader One",
-                            IsBlocked = false,
                             IsLocked = false,
                             Password = "123",
                             Role = "Reader",
@@ -353,7 +349,6 @@ namespace Blog.Migrations
                             UserId = 5,
                             Email = "reader2@gmail.com",
                             FullName = "Reader Two",
-                            IsBlocked = false,
                             IsLocked = false,
                             Password = "123",
                             Role = "Reader",
