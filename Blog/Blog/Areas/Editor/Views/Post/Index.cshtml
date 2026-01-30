@@ -1,27 +1,146 @@
 ﻿@model IEnumerable<Blog.Models.Post>
 
-<h2>Bài viết của tôi</h2>
+@{
+    ViewData["Title"] = "Bài viết của tôi";
+}
 
-<a asp-action="Create">➕ Viết bài mới</a>
+<div class="container my-5">
+    <!-- Header + Nút viết mới -->
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h2 class="fw-bold text-primary mb-0">Bài viết của tôi</h2>
+        <a asp-action="Create" class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm">
+            <i class="bi bi-plus-lg me-2"></i> Viết bài mới
+        </a>
+    </div>
 
-<table border="1">
-    <tr>
-        <th>Tiêu đề</th>
-        <th>Chuyên mục</th>
-        <th>Ngày</th>
-        <th></th>
-    </tr>
-    @foreach (var item in Model)
+    @if (Model != null && Model.Any())
     {
-        <tr>
-            <td>@item.Title</td>
-            <td>@item.Category?.Name</td>
-            <td>@item.CreatedAt.ToShortDateString()</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PostId">✏️</a> |
-                <a asp-action="Delete" asp-route-id="@item.PostId"
-                   onclick="return confirm('Xóa bài này?')">🗑</a>
-            </td>
-        </tr>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model.OrderByDescending(p => p.CreatedAt))
+            {
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden transition">
+                        <!-- Ảnh bài viết -->
+                        @if (!string.IsNullOrEmpty(item.ImagePath))
+                        {
+                            <img src="~/images/@item.ImagePath"
+                                 class="card-img-top"
+                                 alt="@item.Title"
+                                 style="height: 180px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="bg-light d-flex align-items-center justify-content-center" style="height: 180px;">
+                                <i class="bi bi-image text-muted fs-1"></i>
+                            </div>
+                        }
+
+                        <!-- Nội dung card -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold mb-3">
+                                <a asp-area="" asp-controller="Home" asp-action="Details" asp-route-id="@item.PostId"
+                                   class="text-decoration-none text-dark">
+                                    @item.Title
+                                </a>
+                            </h5>
+
+                            <div class="mt-auto">
+                                <!-- Chuyên mục + Ngày -->
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-primary-subtle text-primary">
+                                        <i class="bi bi-folder2-open me-1"></i> @item.Category?.Name
+                                    </span>
+                                    <small class="text-muted">
+                                        <i class="bi bi-calendar-event me-1"></i> @item.CreatedAt.ToString("dd/MM/yyyy")
+                                    </small>
+                                </div>
+
+                                <!-- Trạng thái + lượt xem -->
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span class="badge @(item.Status == "Công khai" ? "bg-success" : "bg-warning")">
+                                        @item.Status
+                                    </span>
+                                    <small class="text-muted">
+                                        <i class="bi bi-eye me-1"></i> @item.Views lượt xem
+                                    </small>
+                                </div>
+
+                                <!-- Nút hành động -->
+                                <div class="d-flex gap-2">
+                                    <a asp-action="Edit" asp-route-id="@item.PostId"
+                                       class="btn btn-sm btn-outline-warning flex-fill">
+                                        <i class="bi bi-pencil me-1"></i> Sửa
+                                    </a>
+                                    <form asp-action="Delete" asp-route-id="@item.PostId" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-danger flex-fill"
+                                                onclick="return confirm('Bạn chắc chắn muốn xóa bài viết này?')">
+                                            <i class="bi bi-trash me-1"></i> Xóa
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     }
-</table>
+    else
+    {
+        <div class="alert alert-light text-center py-5 border rounded-4 shadow-sm">
+            <i class="bi bi-journal-x fs-1 text-muted mb-3 d-block"></i>
+            <h5 class="text-muted mb-2">Chưa có bài viết nào</h5>
+            <p class="text-muted mb-4">Hãy bắt đầu chia sẻ tin tức, trải nghiệm du lịch hoặc bài viết của bạn ngay hôm nay!</p>
+            <a asp-action="Create" class="btn btn-primary btn-lg px-5 rounded-pill">
+                <i class="bi bi-plus-lg me-2"></i> Viết bài mới
+            </a>
+        </div>
+    }
+</div>
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #ff6b35 0%, #e55a2d 100%);
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.25) !important;
+        }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #ff6b35, #e55a2d);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #e55a2d, #d14c24);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255,107,53,0.3);
+        }
+
+    .badge.bg-primary-subtle {
+        background-color: #ffe0d0 !important;
+        color: #ff6b35 !important;
+    }
+
+    .btn-outline-warning {
+        border-color: #ffc107;
+        color: #ffc107;
+    }
+
+        .btn-outline-warning:hover {
+            background: #ffc107;
+            color: white;
+            border-color: #ffc107;
+        }
+
+    .text-primary {
+        color: #ff6b35 !important;
+    }
+</style>

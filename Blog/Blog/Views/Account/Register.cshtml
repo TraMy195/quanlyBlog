@@ -1,27 +1,130 @@
 ﻿@model Blog.Models.ViewModels.RegisterViewModel
 
-<h2>Đăng ký</h2>
+@{
+    ViewData["Title"] = "Đăng ký";
+}
 
-<form method="post">
-    <div>
-        <label>Username</label>
-        <input asp-for="Username" />
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+                <div class="card-header bg-gradient-primary text-white text-center py-4">
+                    <i class="bi bi-person-plus fs-3 mb-2 d-block"></i>
+                    <h3 class="mb-1 fw-bold">Đăng ký BLOG HIỆN ĐẠI</h3>
+                    <p class="text-white-75 small mb-0">Tham gia để cập nhật tin tức & khám phá du lịch 🌏✨</p>
+                </div>
+
+                <div class="card-body p-5">
+                    <form method="post" asp-action="Register">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-4 text-center"></div>
+
+                        <!-- Username -->
+                        <div class="mb-4">
+                            <label asp-for="Username" class="form-label fw-medium">Tên đăng nhập</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-person text-muted"></i>
+                                </span>
+                                <input asp-for="Username" class="form-control border-start-0" placeholder="Nhập username" autocomplete="username" autofocus />
+                            </div>
+                            <span asp-validation-for="Username" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="mb-4">
+                            <label asp-for="Password" class="form-label fw-medium">Mật khẩu</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-lock text-muted"></i>
+                                </span>
+                                <input asp-for="Password" type="password" class="form-control border-start-0" placeholder="Nhập mật khẩu" autocomplete="new-password" />
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- FullName -->
+                        <div class="mb-4">
+                            <label asp-for="FullName" class="form-label fw-medium">Họ tên</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-person-badge text-muted"></i>
+                                </span>
+                                <input asp-for="FullName" class="form-control border-start-0" placeholder="Nhập họ tên đầy đủ" autocomplete="name" />
+                            </div>
+                            <span asp-validation-for="FullName" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-5">
+                            <label asp-for="Email" class="form-label fw-medium">Email</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-envelope text-muted"></i>
+                                </span>
+                                <input asp-for="Email" class="form-control border-start-0" placeholder="Nhập email" autocomplete="email" />
+                            </div>
+                            <span asp-validation-for="Email" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="d-grid mb-4">
+                            <button type="submit" class="btn btn-primary btn-lg fw-medium">
+                                Đăng ký <i class="bi bi-arrow-right ms-2"></i>
+                            </button>
+                        </div>
+
+                        <!-- Login link -->
+                        <div class="text-center">
+                            <a asp-action="Login" class="text-primary fw-medium text-decoration-none">
+                                Đã có tài khoản? <strong>Đăng nhập ngay</strong>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div>
-        <label>Password</label>
-        <input asp-for="Password" type="password" />
-    </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
 
-    <div>
-        <label>Họ tên</label>
-        <input asp-for="FullName" />
-    </div>
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #ff6b35 0%, #e55a2d 100%) !important;
+    }
 
-    <div>
-        <label>Email</label>
-        <input asp-for="Email" />
-    </div>
+    .card {
+        box-shadow: 0 10px 30px rgba(255, 107, 53, 0.12); /* shadow cam nhạt */
+    }
 
-    <button type="submit">Đăng ký</button>
-</form>
+    .input-group-text {
+        border-radius: 0.5rem 0 0 0.5rem !important;
+        background: #ffe0d0 !important; /* nền cam nhạt */
+        border-color: #ff6b35 !important;
+    }
+
+    .form-control {
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.15);
+        }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #ff6b35, #e55a2d);
+        border: none;
+        transition: background 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #e55a2d, #d14c24);
+        }
+
+    .text-primary {
+        color: #ff6b35 !important;
+    }
+</style>

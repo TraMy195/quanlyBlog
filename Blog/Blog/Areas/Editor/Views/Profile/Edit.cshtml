@@ -1,42 +1,135 @@
 ﻿@model Blog.Models.User
+
 @{
     ViewData["Title"] = "Chỉnh sửa hồ sơ";
 }
 
-<h2>✏️ Chỉnh sửa hồ sơ</h2>
+<div class="container my-5 py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
 
-<form asp-area="Editor"
-      asp-controller="Profile"
-      asp-action="UpdateProfile"
-      method="post"
-      enctype="multipart/form-data">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <!-- Header với gradient cam -->
+                <div class="card-header text-white text-center py-5 position-relative overflow-hidden"
+                     style="background: linear-gradient(135deg, #ff6b35 0%, #e55a2d 100%);">
+                    <i class="bi bi-person-gear fs-1 mb-3 d-block"></i>
+                    <h3 class="fw-bold mb-1">Chỉnh sửa hồ sơ</h3>
+                    <p class="mb-0 opacity-90">Cập nhật thông tin cá nhân của bạn</p>
+                </div>
 
-    <div class="mb-3 text-center">
-        <img src="~/avatars/@(Model.AvatarPath ?? "default.jpg")"
-             style="width:120px;height:120px;border-radius:50%;object-fit:cover" />
+                <!-- Body -->
+                <div class="card-body p-5">
+
+                    <form asp-area="Editor" asp-controller="Profile" asp-action="UpdateProfile"
+                          method="post" enctype="multipart/form-data" id="profileForm">
+
+                        <!-- Avatar + Preview -->
+                        <div class="text-center mb-5">
+                            <div class="position-relative d-inline-block">
+                                <img id="avatarPreview"
+                                     src="~/avatars/@(Model.AvatarPath ?? "default.jpg")"
+                                     class="rounded-circle shadow-lg border border-4 border-white"
+                                     alt="Avatar"
+                                     style="width: 150px; height: 150px; object-fit: cover; cursor: pointer;" />
+
+                                <label for="avatarInput"
+                                       class="btn btn-primary rounded-circle position-absolute bottom-0 end-0 shadow-sm"
+                                       style="width: 46px; height: 46px; cursor: pointer; background: #ff6b35; border: none;">
+                                    <i class="bi bi-camera-fill fs-5"></i>
+                                </label>
+                            </div>
+                            <div class="mt-3 text-muted small">
+                                Nhấp vào biểu tượng camera để thay ảnh đại diện
+                            </div>
+                        </div>
+
+                        <input type="file" id="avatarInput" name="avatar" accept="image/*" class="d-none" />
+
+                        <!-- Họ tên -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-badge me-2"></i>Họ và tên
+                            </label>
+                            <input type="text" name="fullName" value="@Model.FullName"
+                                   class="form-control form-control-lg rounded-pill shadow-sm"
+                                   placeholder="Nhập họ tên đầy đủ" required />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-5">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-envelope me-2"></i>Email
+                            </label>
+                            <input type="email" name="email" value="@Model.Email"
+                                   class="form-control form-control-lg rounded-pill shadow-sm"
+                                   placeholder="example@gmail.com" required />
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-grid d-md-flex gap-3 justify-content-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm">
+                                <i class="bi bi-check2-all me-2"></i>Lưu thay đổi
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-primary btn-lg px-5 rounded-pill">
+                                <i class="bi bi-arrow-left me-2"></i>Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
 
-    <div class="mb-3">
-        <label>Đổi avatar</label>
-        <input type="file" name="avatar" class="form-control" />
-    </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 
-    <div class="mb-3">
-        <label>Họ tên</label>
-        <input type="text"
-               name="fullName"
-               value="@Model.FullName"
-               class="form-control" />
-    </div>
+    <script>
+        // Preview avatar ngay khi chọn ảnh mới
+        document.getElementById('avatarInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    document.getElementById('avatarPreview').src = ev.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}
 
-    <div class="mb-3">
-        <label>Email</label>
-        <input type="email"
-               name="email"
-               value="@Model.Email"
-               class="form-control" />
-    </div>
+<style>
+    .card {
+        box-shadow: 0 15px 40px rgba(255, 107, 53, 0.15);
+    }
 
-    <button type="submit" class="btn btn-primary">💾 Lưu</button>
-    <a asp-action="Index" class="btn btn-secondary">⬅ Quay lại</a>
-</form>
+    .form-control:focus {
+        border-color: #ff6b35;
+        box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.2);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #ff6b35, #e55a2d);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #e55a2d, #d14c24);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+    .btn-outline-primary {
+        border-color: #ff6b35;
+        color: #ff6b35;
+    }
+
+        .btn-outline-primary:hover {
+            background: #ff6b35;
+            color: white;
+            border-color: #ff6b35;
+        }
+</style>

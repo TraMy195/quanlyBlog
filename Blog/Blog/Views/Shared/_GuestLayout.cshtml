@@ -2,39 +2,337 @@
 @using System.Security.Claims
 
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" data-bs-theme="light">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] - Blog</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - BLOG HIỆN ĐẠI</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --primary-dark: #e55a2d;
+            --primary-light: #ffe0d0;
+            --bg-light: #fffaf5;
+            --bg-dark: #121212;
+            --text-light: #2d1f16;
+            --text-dark: #e0e0e0;
+            --muted-light: #6c757d;
+            --muted-dark: #adb5bd;
+            --footer-bg: #1a1a1a;
+            --card-bg: white;
+            --card-bg-dark: #1e1e1e;
+        }
+
+        [data-bs-theme="dark"] {
+            --bg: var(--bg-dark);
+            --text: var(--text-dark);
+            --muted: var(--muted-dark);
+            --card-bg: var(--card-bg-dark);
+            --primary-light: #3a2a22;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        [data-bs-theme="dark"] body {
+            background: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* Navbar to bằng Editor Panel */
+        .navbar {
+            background: linear-gradient(135deg, white, var(--primary-light)) !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 1.2rem 0 !important;
+            transition: background 0.4s ease;
+        }
+
+        [data-bs-theme="dark"] .navbar {
+            background: linear-gradient(135deg, #1e1e1e, #2a1f1a) !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary) !important;
+            font-size: 1.8rem;
+        }
+
+        .nav-link, .auth-link {
+            font-weight: 500;
+            color: var(--text-light) !important;
+            transition: color 0.3s;
+        }
+
+        [data-bs-theme="dark"] .nav-link, [data-bs-theme="dark"] .auth-link {
+            color: var(--text-dark) !important;
+        }
+
+        .nav-link:hover, .auth-link:hover {
+            color: var(--primary) !important;
+        }
+
+        .text-primary {
+            color: var(--primary) !important;
+        }
+
+        .btn-outline-primary {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+            .btn-outline-primary:hover {
+                background: var(--primary);
+                color: white;
+                border-color: var(--primary);
+            }
+
+        .btn-primary {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+            .btn-primary:hover {
+                background: var(--primary-dark);
+                border-color: var(--primary-dark);
+            }
+
+        main.container {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            padding: 2.5rem;
+            margin: 6rem auto 3rem;
+            transition: all 0.4s ease;
+        }
+
+        [data-bs-theme="dark"] main.container {
+            background: var(--card-bg-dark);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+        }
+
+        footer {
+            background: var(--footer-bg);
+            color: rgba(255,255,255,0.9);
+            padding: 3rem 0 2rem;
+            margin-top: auto;
+        }
+
+        .hover-primary:hover {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+
+        .transition {
+            transition: all 0.3s ease;
+        }
+
+            .transition:hover {
+                opacity: 1 !important;
+                transform: translateY(-3px);
+            }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        [data-bs-theme="dark"] .theme-toggle {
+            color: var(--text-dark);
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(15deg);
+            color: var(--primary);
+        }
+
+        .bg-dark .form-control {
+            background: #2a2a2a;
+            border-color: #444;
+            color: white;
+        }
+
+            .bg-dark .form-control::placeholder {
+                color: #aaa;
+            }
+
+        .text-secondary {
+            color: var(--muted-light) !important;
+        }
+
+        [data-bs-theme="dark"] .text-secondary {
+            color: var(--muted-dark) !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <header style="padding:10px; border-bottom:1px solid #ccc">
-        <a asp-controller="Home" asp-action="Index">🏠 Trang chủ</a>
 
-        <span style="float:right">
-            @if (User?.Identity != null && User.Identity.IsAuthenticated)
-            {
-                <span>Xin chào <b>@User.Identity?.Name</b></span>
-                <text> | </text>
-                <a asp-controller="Account" asp-action="Logout">Đăng xuất</a>
-            }
-            else
-            {
-                <a asp-controller="Account" asp-action="Login">Đăng nhập</a>
-                <text> | </text>
-                <a asp-controller="Account" asp-action="Register">Đăng ký</a>
-            }
-        </span>
-    </header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">BLOG HIỆN ĐẠI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Editor"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" asp-area="Editor" asp-controller="Profile" asp-action="Index">
+                                <i class="bi bi-gear me-1"></i> Editor Panel
+                            </a>
+                        </li>
+                    }
+                    @if (User?.Identity?.IsAuthenticated == true)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link text-muted">Xin chào, <strong class="text-primary">@User.Identity?.Name</strong></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary auth-link" asp-controller="Account" asp-action="Logout">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link auth-link" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link auth-link" asp-controller="Account" asp-action="Register">Đăng ký</a>
+                        </li>
+                    }
 
-    <main style="padding:20px">
+                    <!-- Theme Toggle -->
+                    <li class="nav-item ms-3">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="bi bi-sun-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
         @RenderBody()
     </main>
 
-    <footer style="padding:10px; border-top:1px solid #ccc; text-align:center">
-        © Blog Management
+    <footer class="text-white py-5 mt-auto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <h4 class="fw-bold mb-4 text-primary">BLOG HIỆN ĐẠI</h4>
+                    <p class="text-secondary mb-4">
+                        Nơi cập nhật tin tức nóng hổi, chia sẻ trải nghiệm du lịch, khám phá vẻ đẹp Hà Nội và Việt Nam. Cùng nhau khám phá thế giới nhé! ✈️🌏
+                    </p>
+                    <div class="d-flex gap-4">
+                        <a href="https://facebook.com/" target="_blank" class="text-white opacity-75 transition"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="https://github.com/" target="_blank" class="text-white opacity-75 transition"><i class="bi bi-github fs-3"></i></a>
+                        <a href="https://x.com/" target="_blank" class="text-white opacity-75 transition"><i class="bi bi-twitter-x fs-3"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" class="text-white opacity-75 transition"><i class="bi bi-linkedin fs-3"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="fw-bold mb-4">Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a asp-controller="Home" asp-action="Index" class="text-secondary text-decoration-none hover-primary">Trang chủ</a></li>
+                        <li class="mb-3"><a asp-controller="Home" asp-action="Privacy" class="text-secondary text-decoration-none hover-primary">Chính sách bảo mật</a></li>
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Về mình</a></li>
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h5 class="fw-bold mb-4">Danh mục</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Tin tức</a></li>
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Du lịch Hà Nội</a></li>
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Du lịch Việt Nam</a></li>
+                        <li class="mb-3"><a href="#" class="text-secondary text-decoration-none hover-primary">Mẹo du lịch</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Nhận tin mới</h5>
+                    <p class="text-secondary small mb-3">Đăng ký để nhận tin tức và bài viết du lịch mới nhất qua email!</p>
+                    <form class="input-group input-group-sm">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email của bạn..." aria-label="Email đăng ký">
+                        <button class="btn btn-primary" type="submit">Đăng ký</button>
+                    </form>
+                    <small class="text-muted mt-2 d-block">Chúng mình tôn trọng quyền riêng tư của bạn.</small>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-4 border-top border-secondary">
+                <small class="text-secondary">
+                    © @DateTime.Now.Year BLOG HIỆN ĐẠI • Xây dựng với ❤️ tại Hà Nội •
+                    <a asp-controller="Home" asp-action="Privacy" class="text-secondary text-decoration-none hover-primary">Chính sách bảo mật</a>
+                </small>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Dark/Light mode toggle with localStorage
+        const html = document.documentElement;
+        const toggleBtn = document.getElementById('themeToggle');
+        const icon = toggleBtn.querySelector('i');
+
+        function setTheme(theme) {
+            html.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+            icon.className = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+        }
+
+        // Load saved theme or system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            const current = html.getAttribute('data-bs-theme') || 'light';
+            setTheme(current === 'light' ? 'dark' : 'light');
+        });
+    </script>
 
     @RenderSection("Scripts", required: false)
 </body>

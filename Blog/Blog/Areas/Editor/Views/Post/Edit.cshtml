@@ -1,36 +1,195 @@
 ﻿@model Blog.Models.Post
 
-<h2>Sửa bài viết</h2>
+@{
+    ViewData["Title"] = "Sửa bài viết";
+}
 
-<form asp-action="Edit" enctype="multipart/form-data" method="post">
-    <input type="hidden" asp-for="PostId" />
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
 
-    <div>
-        <label>Tiêu đề</label>
-        <input asp-for="Title" />
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <!-- Header với gradient cam -->
+                <div class="card-header bg-gradient-primary text-white text-center py-4">
+                    <i class="bi bi-pencil-square fs-1 mb-2 d-block"></i>
+                    <h3 class="mb-1 fw-bold">Sửa bài viết</h3>
+                    <p class="text-white-75 small mb-0">Cập nhật nội dung tin tức hoặc bài du lịch của bạn 🌏✨</p>
+                </div>
+
+                <!-- Form -->
+                <div class="card-body p-5">
+                    <form asp-action="Edit" enctype="multipart/form-data" method="post">
+                        <input type="hidden" asp-for="PostId" />
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-4 text-center"></div>
+
+                        <!-- Tiêu đề -->
+                        <div class="mb-4">
+                            <label asp-for="Title" class="form-label fw-medium">Tiêu đề bài viết</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-card-heading text-muted"></i>
+                                </span>
+                                <input asp-for="Title" class="form-control border-start-0"
+                                       placeholder="Nhập tiêu đề bài viết..." required />
+                            </div>
+                            <span asp-validation-for="Title" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Nội dung -->
+                        <div class="mb-5">
+                            <label asp-for="Content" class="form-label fw-medium">Nội dung bài viết</label>
+                            <textarea asp-for="Content" class="form-control" rows="12"
+                                      placeholder="Viết nội dung chi tiết ở đây..."></textarea>
+                            <span asp-validation-for="Content" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Chuyên mục -->
+                        <div class="mb-4">
+                            <label class="form-label fw-medium">Chuyên mục</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light border-0">
+                                    <i class="bi bi-folder2-open text-muted"></i>
+                                </span>
+                                <select asp-for="CategoryId" class="form-select border-start-0" required>
+                                    <option value="">-- Chọn chuyên mục --</option>
+                                    @foreach (var cat in ViewBag.Categories)
+                                    {
+                                        <option value="@cat.CategoryId">@cat.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh hiện tại + Upload mới + Preview -->
+                        <div class="mb-5">
+                            <label class="form-label fw-medium">Ảnh đại diện</label>
+                            <div class="row g-4">
+                                <!-- Ảnh hiện tại -->
+                                <div class="col-md-5">
+                                    <div class="border rounded p-3 bg-light text-center">
+                                        <label class="form-label small mb-2 text-muted">Ảnh hiện tại</label>
+                                        @if (!string.IsNullOrEmpty(Model.ImagePath))
+                                        {
+                                            <img src="~/images/@Model.ImagePath"
+                                                 id="currentImage"
+                                                 class="img-fluid rounded mb-2"
+                                                 style="max-height: 180px; object-fit: cover;" />
+                                        }
+                                        else
+                                        {
+                                            <div class="bg-secondary-subtle d-flex align-items-center justify-content-center" style="height: 180px;">
+                                                <i class="bi bi-image text-muted fs-3"></i>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+
+                                <!-- Upload mới + Preview -->
+                                <div class="col-md-7">
+                                    <div class="border rounded p-3 bg-light">
+                                        <label for="imageInput" class="form-label small mb-2 text-muted">Chọn ảnh mới (nếu muốn thay)</label>
+                                        <input type="file" id="imageInput" name="image" accept="image/*" class="form-control form-control-lg" />
+                                        <small class="form-text text-muted mt-2">Ảnh mới sẽ thay thế ảnh cũ</small>
+
+                                        <!-- Preview ảnh mới -->
+                                        <div class="mt-3 text-center" id="previewContainer" style="display:none;">
+                                            <img id="imagePreview" class="img-fluid rounded"
+                                                 style="max-height: 180px; object-fit: cover;" />
+                                            <small class="text-muted d-block mt-2">Ảnh xem trước</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nút submit -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill fw-medium">
+                                <i class="bi bi-save-fill me-2"></i> Lưu bài viết
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Nút quay lại -->
+            <div class="text-center mt-4">
+                <a asp-action="Index" class="btn btn-outline-primary btn-lg px-5 rounded-pill">
+                    <i class="bi bi-arrow-left me-2"></i> Quay lại danh sách
+                </a>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div>
-        <label>Nội dung</label>
-        <textarea asp-for="Content" rows="6"></textarea>
-    </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 
-    <div>
-        <label>Chuyên mục</label>
-        <select asp-for="CategoryId"
-                asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "Name"))">
-        </select>
-    </div>
+    <script>
+        // Preview ảnh mới khi chọn file
+        document.getElementById('imageInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('imagePreview');
+            const container = document.getElementById('previewContainer');
 
-    <div>
-        <label>Ảnh mới (nếu đổi)</label>
-        <input type="file" name="image" />
-        @if (!string.IsNullOrEmpty(Model.ImagePath))
-        {
-            <br />
-            <img src="~/images/@Model.ImagePath" width="150" />
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    preview.src = ev.target.result;
+                    container.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            } else {
+                container.style.display = 'none';
+            }
+        });
+    </script>
+}
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #ff6b35 0%, #e55a2d 100%) !important;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #ff6b35;
+        box-shadow: 0 0 0 0.25rem rgba(255,107,53,0.25);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #ff6b35, #e55a2d);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #e55a2d, #d14c24);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255,107,53,0.3);
         }
-    </div>
 
-    <button type="submit">Lưu</button>
-</form>
+    .btn-outline-primary {
+        border-color: #ff6b35;
+        color: #ff6b35;
+    }
+
+        .btn-outline-primary:hover {
+            background: #ff6b35;
+            color: white;
+            border-color: #ff6b35;
+        }
+
+    .card {
+        box-shadow: 0 15px 40px rgba(255,107,53,0.15);
+    }
+
+    .input-group-text {
+        background: #ffe0d0 !important;
+        border-color: #ff6b35 !important;
+    }
+
+    .text-primary {
+        color: #ff6b35 !important;
+    }
+</style>

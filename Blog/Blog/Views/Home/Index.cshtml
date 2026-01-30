@@ -1,68 +1,183 @@
 ﻿@model IEnumerable<Blog.Models.Post>
 
-<h2>Trang chủ</h2>
 @{
+    ViewData["Title"] = "Trang chủ";
     var categories = ViewBag.Categories as List<Blog.Models.Category>;
+    var currentCategoryId = ViewBag.CategoryId as int?;
+    var keyword = ViewBag.Keyword as string;
 }
 
-<div style="margin-bottom:15px">
-    <b>📂 Chuyên mục:</b>
-    <a asp-action="Index">Tất cả</a>
-    @foreach (var c in categories)
+<!-- Hero Banner cũ, full-width (kéo sát hai bên), thu nhỏ height 70vh -->
+<section class="hero-banner position-relative text-white d-flex align-items-center justify-content-center overflow-hidden" style="height: 70vh; min-height: 500px;">
+    <!-- Background full-width, tĩnh -->
+    <div class="hero-bg position-absolute top-0 start-0 w-100 h-100"
+         style="background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+                url('https://thegioicombo.vn/uploads/VietNam/TAY-BAC/NGAO-DU/2-min.jpg') center/cover no-repeat;">
+    </div>
+
+    <!-- Content centered with container -->
+    <div class="container position-relative z-2 text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInUp animate__delay-0.5s"
+                    style="text-shadow: 0 4px 20px rgba(0,0,0,0.7);">
+                    Chào mừng đến Blog hiện đại
+                </h1>
+                <p class="lead fs-5 mb-5 animate__animated animate__fadeInUp animate__delay-1s"
+                   style="text-shadow: 0 2px 10px rgba(0,0,0,0.6);">
+                    Sống chất, Đi xa, Khám phá điều mới lạ
+                </p>
+                <a asp-action="Index" class="btn btn-primary btn-lg px-5 py-3 fw-semibold animate__animated animate__fadeInUp animate__delay-1.5s"
+                   style="background: #ff6b35; border: none; box-shadow: 0 6px 20px rgba(255,107,53,0.5); transition: all 0.3s;">
+                    Khám phá bài viết ngay
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main content -->
+<div class="my-5 container">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Khám phá theo chủ đề</h2>
+        <p class="text-muted">Chọn danh mục hoặc tìm kiếm để đọc những bài viết phù hợp nhất với bạn</p>
+    </div>
+
+    <div class="row mb-5 g-3 align-items-center">
+        <div class="col-lg-8">
+            <nav class="nav nav-pills nav-fill flex-nowrap overflow-auto">
+                <a class="nav-link @(currentCategoryId == null ? "active" : "")" asp-action="Index">Tất cả</a>
+                @foreach (var c in categories ?? new List<Blog.Models.Category>())
+                {
+                    <a class="nav-link @(currentCategoryId == c.CategoryId ? "active" : "")"
+                       asp-action="Index" asp-route-categoryId="@c.CategoryId">@c.Name</a>
+                }
+            </nav>
+        </div>
+
+        <div class="col-lg-4">
+            <form asp-action="Index" method="get" class="d-flex">
+                <input type="text" name="keyword" value="@keyword" class="form-control me-2" placeholder="🔍 Tìm bài viết..." />
+                @if (currentCategoryId != null)
+                {
+                    <input type="hidden" name="categoryId" value="@currentCategoryId" />
+                }
+                <button type="submit" class="btn btn-primary">Tìm</button>
+            </form>
+        </div>
+    </div>
+
+    @if (Model.Any())
     {
-        <text> | </text>
-        <a asp-action="Index"
-           asp-route-categoryId="@c.CategoryId">
-            @c.Name
-        </a>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var post in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 transition">
+                        @if (!string.IsNullOrEmpty(post.ImagePath))
+                        {
+                            <img src="~/images/@post.ImagePath" class="card-img-top" alt="@post.Title" style="height: 200px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <span class="text-muted">Chưa có ảnh</span>
+                            </div>
+                        }
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold">
+                                <a asp-action="Details" asp-route-id="@post.PostId" class="text-decoration-none text-dark">@post.Title</a>
+                            </h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                @(post.Content.Length > 150 ? post.Content.Substring(0, 150) + "..." : post.Content)
+                            </p>
+                            <div class="mt-auto">
+                                <small class="text-muted">
+                                    👤 <span class="fw-medium">@(post.Author?.Username ?? "Ẩn danh")</span> •
+                                    📅 @post.CreatedAt.ToString("dd/MM/yyyy")
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center py-5">
+            <h4>Chưa có bài viết nào</h4>
+            <p>
+                @if (!string.IsNullOrEmpty(keyword))
+                {
+                    <text>Không tìm thấy kết quả cho "<strong>@keyword</strong>".</text>
+                }
+                else
+                {
+                    <text>Hãy thử viết bài mới nhé! ✍️</text>
+                }
+            </p>
+        </div>
     }
 </div>
 
-<form asp-action="Index" method="get" style="margin-bottom:20px">
-    <input type="text"
-           name="keyword"
-           value="@ViewBag.Keyword"
-           placeholder="🔍 Tìm bài viết..."
-           style="width:250px; padding:6px" />
-
-    @if (ViewBag.CategoryId != null)
-    {
-        <input type="hidden" name="categoryId"
-               value="@ViewBag.CategoryId" />
+<!-- Styles -->
+<style>
+    :root {
+        --primary: #ff6b35;
+        --primary-dark: #e55a2d;
+        --muted: #6c757d;
     }
 
-    <button type="submit">Tìm</button>
-</form>
+    .hero-banner {
+        position: relative;
+        margin: 0;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
+    /* Card hover */
+    .transition {
+        transition: all 0.3s ease;
+    }
 
-
-
-@foreach (var post in Model)
-{
-    <div style="border-bottom:1px solid #ddd; margin-bottom:15px; padding-bottom:10px">
-        @if (!string.IsNullOrEmpty(post.ImagePath))
-        {
-            <img src="~/images/@post.ImagePath"
-                 style="width:150px; float:left; margin-right:15px" />
+        .transition:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.25) !important;
         }
 
-        <h3>
-            <a asp-action="Details" asp-route-id="@post.PostId">
-                @post.Title
-            </a>
-        </h3>
+    .card-title a:hover {
+        color: var(--primary) !important;
+        text-decoration: underline !important;
+    }
 
-        <p>
-            @post.Content.Substring(0,
-            Math.Min(100, post.Content.Length))...
-    </p>
+    .nav-pills .nav-link {
+        border-radius: 50px;
+        padding: 0.6rem 1.5rem;
+        color: var(--muted);
+        transition: all 0.3s;
+    }
 
-    <small>
-        👤 @post.Author?.Username |
-        📅 @post.CreatedAt.ToString("dd/MM/yyyy")
-    </small>
+        .nav-pills .nav-link:hover {
+            background: #ffe0d0;
+            color: var(--primary);
+        }
 
-    <div style="clear:both"></div>
-</div>
+        .nav-pills .nav-link.active {
+            background: var(--primary) !important;
+            color: white !important;
+        }
 
-}
+    .btn-primary {
+        background: var(--primary);
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+</style>
+
+<!-- Animate.css cho fade-in -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />

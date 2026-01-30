@@ -1,118 +1,147 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\",
+  "WorkspaceRootPath": "D:\\Nam2\\My\\quanlyBlog\\Blog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\editor\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\editor\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\editor\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\models\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Migrations\\20260127095936_AddUserAvatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Blog\\Migrations\\20260127095936_AddUserAvatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\views\\editor\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\editor\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\shared\\_guestlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\shared\\_guestlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\shared\\_editorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\profile\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\views\\editor\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\views\\editor\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\editor\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\editor\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\admin\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\models\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\editorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\data\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\data\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\data\\blogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\blog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\blog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\blog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\n2_ky2\\back-end\\btl\\quanlyblog\\blog\\blog\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Blog\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Blog\\Controllers\\PostController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Blog\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|d:\\nam2\\my\\quanlyblog\\blog\\blog\\migrations\\20260127095936_adduseravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABFC4E14-AC88-2F69-CBB4-A13C8A00B3B3}|Blog\\Blog.csproj|solutionrelative:blog\\migrations\\20260127095936_adduseravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,169 +151,172 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
-              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswBcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-27T10:54:35.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditProfileViewModel.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
-              "RelativeDocumentMoniker": "Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
-              "RelativeToolTip": "Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:48:06.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Blog\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T10:34:54.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
-              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-27T10:18:42.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAswHMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T10:21:52.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditorController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\EditorController.cs",
-              "RelativeDocumentMoniker": "Blog\\Controllers\\EditorController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\EditorController.cs",
-              "RelativeToolTip": "Blog\\Controllers\\EditorController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T10:33:58.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
-              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T10:26:09.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Admin\\Controllers\\PostController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\PostController.cs",
-              "RelativeToolTip": "Blog\\Areas\\Admin\\Controllers\\PostController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:09:05.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "_EditorLayout.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
-              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T10:26:57.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Blog\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Blog\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-25T10:08:21.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Details.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
-              "RelativeToolTip": "Blog\\Views\\Home\\Details.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_GuestLayout.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Shared\\_GuestLayout.cshtml",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAkwOkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T09:47:11.481Z",
+              "WhenOpened": "2026-01-29T20:02:13.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T09:23:42.128Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_EditorLayout.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Shared\\_EditorLayout.cshtml",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAkwCkBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T10:26:57.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwGkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:22:37.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:26:53.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAkwIEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:25:50.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAkwMEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T10:26:09.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Profile\\Edit.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAkwIYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T10:54:35.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "20260127095936_AddUserAvatar.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
-              "RelativeDocumentMoniker": "Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
-              "RelativeToolTip": "Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T09:59:36.256Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Index.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwJEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T10:18:42.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Create.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAkwJQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:40:43.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\Post\\Edit.cshtml",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAkwMIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:41:31.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Blog\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-25T09:47:11.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
               "RelativeDocumentMoniker": "Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
               "RelativeToolTip": "Blog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -292,36 +324,143 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Blog\\Models\\User.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
-              "RelativeToolTip": "Blog\\Models\\User.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T15:24:45.124Z",
-              "EditorCaption": ""
+              "DocumentIndex": 14,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:33:30.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-29T20:33:29.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Profile.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Editor\\Profile.cshtml",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Editor\\Profile.cshtml",
               "RelativeDocumentMoniker": "Blog\\Views\\Editor\\Profile.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Editor\\Profile.cshtml",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Views\\Editor\\Profile.cshtml",
               "RelativeToolTip": "Blog\\Views\\Editor\\Profile.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-25T10:37:42.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Blog\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:34:54.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Blog\\Areas\\Editor\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAswHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T10:21:52.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditorController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\EditorController.cs",
+              "RelativeDocumentMoniker": "Blog\\Controllers\\EditorController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\EditorController.cs",
+              "RelativeToolTip": "Blog\\Controllers\\EditorController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T10:33:58.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Blog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Blog\\Areas\\Admin\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:09:05.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\appsettings.json",
+              "RelativeDocumentMoniker": "Blog\\appsettings.json",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\appsettings.json",
+              "RelativeToolTip": "Blog\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-21T15:29:55.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditProfileViewModel.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
+              "RelativeToolTip": "Blog\\Models\\ViewModels\\EditProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:06.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20260127095936_AddUserAvatar.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
+              "RelativeDocumentMoniker": "Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
+              "RelativeToolTip": "Blog\\Migrations\\20260127095936_AddUserAvatar.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T09:59:36.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Blog\\Models\\User.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\User.cs",
+              "RelativeToolTip": "Blog\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T15:24:45.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Blog\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Blog\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -329,23 +468,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Blog\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Blog\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T17:15:54.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "CommentController.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Blog\\Controllers\\CommentController.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Controllers\\CommentController.cs",
               "RelativeToolTip": "Blog\\Controllers\\CommentController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAAwFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,47 +492,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Blog\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Blog\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-25T09:23:42.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "PostController.cs",
               "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "Blog\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs",
               "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs",
-              "RelativeToolTip": "Blog\\Controllers\\PostController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\PostController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T17:15:04.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Blog\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs",
               "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Blog\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAUwBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T17:14:34.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Program.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Program.cs",
               "RelativeDocumentMoniker": "Blog\\Program.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Program.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Program.cs",
               "RelativeToolTip": "Blog\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -401,23 +528,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\appsettings.json",
-              "RelativeDocumentMoniker": "Blog\\appsettings.json",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\appsettings.json",
-              "RelativeToolTip": "Blog\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-21T15:29:55.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "BlogDbContext.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
               "RelativeDocumentMoniker": "Blog\\Data\\BlogDbContext.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Data\\BlogDbContext.cs",
               "RelativeToolTip": "Blog\\Data\\BlogDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -425,11 +540,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "Blog.csproj",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
               "RelativeDocumentMoniker": "Blog\\Blog.csproj",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Blog.csproj",
               "RelativeToolTip": "Blog\\Blog.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -437,11 +552,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
               "RelativeDocumentMoniker": "Blog\\Models\\Comment.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Comment.cs",
               "RelativeToolTip": "Blog\\Models\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -449,11 +564,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "Post.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
               "RelativeDocumentMoniker": "Blog\\Models\\Post.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Post.cs",
               "RelativeToolTip": "Blog\\Models\\Post.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -461,11 +576,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Category.cs",
-              "DocumentMoniker": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
+              "DocumentMoniker": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Blog\\Models\\Category.cs",
-              "ToolTip": "D:\\N2_Ky2\\Back-End\\BTL\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
+              "ToolTip": "D:\\Nam2\\My\\quanlyBlog\\Blog\\Blog\\Models\\Category.cs",
               "RelativeToolTip": "Blog\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
